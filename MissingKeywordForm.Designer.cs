@@ -2,15 +2,8 @@
 {
     partial class MissingKeywordForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,20 +13,149 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MissingKeywordForm";
+            lblRoom = new Label();
+            lblPlayer = new Label();
+            lblTime = new Label();
+            progressTime = new ProgressBar();
+            lblInstruction = new Label();
+            lblCode = new Label();
+            cmbKeyword = new ComboBox();
+            btnSubmit = new Button();
+            lblMessage = new Label();
+            btnHint = new Button();
+            lblDigits = new Label();
+            SuspendLayout();
+
+            lblRoom.AutoSize = true;
+            lblRoom.Font = new Font("Consolas", 16F, FontStyle.Bold);
+            lblRoom.ForeColor = Color.FromArgb(0, 255, 156);
+            lblRoom.Location = new Point(30, 20);
+            lblRoom.Name = "lblRoom";
+            lblRoom.Text = "ROOM 2 - MISSING KEYWORD";
+
+            lblPlayer.AutoSize = true;
+            lblPlayer.Font = new Font("Consolas", 10F);
+            lblPlayer.ForeColor = Color.FromArgb(200, 200, 200);
+            lblPlayer.Location = new Point(32, 55);
+            lblPlayer.Name = "lblPlayer";
+            lblPlayer.Text = "Player:";
+
+            lblTime.Font = new Font("Consolas", 20F, FontStyle.Bold);
+            lblTime.ForeColor = Color.FromArgb(0, 255, 156);
+            lblTime.Location = new Point(620, 18);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(150, 40);
+            lblTime.Text = "15:00";
+            lblTime.TextAlign = ContentAlignment.MiddleRight;
+
+            progressTime.Location = new Point(30, 90);
+            progressTime.Name = "progressTime";
+            progressTime.Size = new Size(740, 12);
+
+            lblInstruction.AutoSize = true;
+            lblInstruction.Font = new Font("Consolas", 11F);
+            lblInstruction.ForeColor = Color.FromArgb(200, 200, 200);
+            lblInstruction.Location = new Point(30, 130);
+            lblInstruction.Name = "lblInstruction";
+            lblInstruction.Text = "Choose the C# keyword that completes this line of code:";
+
+            lblCode.BackColor = Color.FromArgb(22, 27, 34);
+            lblCode.BorderStyle = BorderStyle.FixedSingle;
+            lblCode.Font = new Font("Consolas", 16F);
+            lblCode.ForeColor = Color.FromArgb(0, 255, 156);
+            lblCode.Location = new Point(30, 165);
+            lblCode.Name = "lblCode";
+            lblCode.Size = new Size(740, 60);
+            lblCode.Text = "____";
+            lblCode.TextAlign = ContentAlignment.MiddleCenter;
+
+            cmbKeyword.BackColor = Color.FromArgb(22, 27, 34);
+            cmbKeyword.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbKeyword.FlatStyle = FlatStyle.Flat;
+            cmbKeyword.Font = new Font("Consolas", 14F);
+            cmbKeyword.ForeColor = Color.FromArgb(0, 255, 156);
+            cmbKeyword.Location = new Point(300, 250);
+            cmbKeyword.Name = "cmbKeyword";
+            cmbKeyword.Size = new Size(200, 30);
+            cmbKeyword.TabIndex = 0;
+
+            btnSubmit.BackColor = Color.FromArgb(22, 27, 34);
+            btnSubmit.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 156);
+            btnSubmit.FlatStyle = FlatStyle.Flat;
+            btnSubmit.Font = new Font("Consolas", 12F, FontStyle.Bold);
+            btnSubmit.ForeColor = Color.FromArgb(0, 255, 156);
+            btnSubmit.Location = new Point(310, 300);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(180, 45);
+            btnSubmit.TabIndex = 1;
+            btnSubmit.Text = "SUBMIT";
+            btnSubmit.UseVisualStyleBackColor = false;
+            btnSubmit.Click += btnSubmit_Click;
+
+            lblMessage.Font = new Font("Consolas", 11F);
+            lblMessage.ForeColor = Color.FromArgb(255, 170, 60);
+            lblMessage.Location = new Point(0, 355);
+            lblMessage.Name = "lblMessage";
+            lblMessage.Size = new Size(800, 25);
+            lblMessage.TextAlign = ContentAlignment.MiddleCenter;
+
+            btnHint.BackColor = Color.FromArgb(22, 27, 34);
+            btnHint.FlatAppearance.BorderColor = Color.FromArgb(255, 170, 60);
+            btnHint.FlatStyle = FlatStyle.Flat;
+            btnHint.Font = new Font("Consolas", 11F, FontStyle.Bold);
+            btnHint.ForeColor = Color.FromArgb(255, 170, 60);
+            btnHint.Location = new Point(30, 395);
+            btnHint.Name = "btnHint";
+            btnHint.Size = new Size(140, 40);
+            btnHint.TabIndex = 2;
+            btnHint.Text = "HINT";
+            btnHint.UseVisualStyleBackColor = false;
+
+            lblDigits.Font = new Font("Consolas", 13F, FontStyle.Bold);
+            lblDigits.ForeColor = Color.FromArgb(0, 255, 156);
+            lblDigits.Location = new Point(520, 400);
+            lblDigits.Name = "lblDigits";
+            lblDigits.Size = new Size(250, 30);
+            lblDigits.Text = "Code: _ _ _ _ _";
+            lblDigits.TextAlign = ContentAlignment.MiddleRight;
+
+            AcceptButton = btnSubmit;
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(13, 17, 23);
+            ClientSize = new Size(800, 460);
+            Controls.Add(lblRoom);
+            Controls.Add(lblPlayer);
+            Controls.Add(lblTime);
+            Controls.Add(progressTime);
+            Controls.Add(lblInstruction);
+            Controls.Add(lblCode);
+            Controls.Add(cmbKeyword);
+            Controls.Add(btnSubmit);
+            Controls.Add(lblMessage);
+            Controls.Add(btnHint);
+            Controls.Add(lblDigits);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "MissingKeywordForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Escape.exe - Room 2";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
-        #endregion
+        private Label lblRoom;
+        private Label lblPlayer;
+        private Label lblTime;
+        private ProgressBar progressTime;
+        private Label lblInstruction;
+        private Label lblCode;
+        private ComboBox cmbKeyword;
+        private Button btnSubmit;
+        private Label lblMessage;
+        private Button btnHint;
+        private Label lblDigits;
     }
 }
