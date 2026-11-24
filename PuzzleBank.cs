@@ -97,6 +97,12 @@ public static class PuzzleBank
             new[] { false, false, true, true })
     };
 
+    public static readonly string[] CipherWords =
+    {
+        "CLASS", "LOOP", "ARRAY", "DEBUG", "STRING",
+        "METHOD", "OBJECT", "BINARY", "SYNTAX", "COMPILE"
+    };
+
     public static int[] GenerateDigits()
     {
         int[] digits = new int[5];
@@ -120,5 +126,35 @@ public static class PuzzleBank
     public static LogicCircuit GetLogicCircuit()
     {
         return LogicCircuits[Rng.Next(LogicCircuits.Count)];
+    }
+
+    public static int GenerateBinaryNumber()
+    {
+        return Rng.Next(5, 16);
+    }
+
+    public static string ToFourBitBinary(int number)
+    {
+        return Convert.ToString(number, 2).PadLeft(4, '0');
+    }
+
+    public static string GetCipherWord()
+    {
+        return CipherWords[Rng.Next(CipherWords.Length)];
+    }
+
+    public static int GetCipherShift()
+    {
+        return Rng.Next(1, 6);
+    }
+
+    public static string CaesarEncode(string word, int shift)
+    {
+        string result = "";
+        foreach (char letter in word)
+        {
+            result += (char)('A' + (letter - 'A' + shift) % 26);
+        }
+        return result;
     }
 }
