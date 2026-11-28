@@ -6,10 +6,34 @@ A programming puzzle escape game built in **C# Windows Forms** for the **Visual 
 
 ## Team CodeBreakers
 
-| Member | Registration No. | Responsibilities |
-|---|---|---|
-| Minahil Chaudhry | 09-131242-045 
-| Javeria Lodhi | 09-131242-033 
+| Member | Registration No. |
+|---|---|
+| Minahil Chaudhry | 09-131242-045 |
+| Javeria Lodhi | 09-131242-033 |
+
+**Submitted to:** Miss Raheela Ambrin
+
+## Responsibilities
+
+### Minahil Chaudhry
+- **Room 2: Missing Keyword** (Easy)
+- **Room 4: Logic Gate Switches** (Hard)
+- **Final Room:** exit-code check
+- **GameSession:** shared 15-minute countdown timer that keeps running across all rooms
+- **PuzzleBank:** question banks for Rooms 2 and 4, and the random exit-code digits
+- **Scoring, Leaderboard & JSON storage** (`scores.json`)
+
+### Javeria Lodhi
+- **Room 1: Binary Door** (Easy)
+- **Room 3: Caesar Cipher** (Medium)
+- **Room 5: Algorithm Trace** (Hard)
+- **Start screen** with name validation, and navigation between forms
+- **PuzzleBank:** question generators for Rooms 1, 3 and 5
+- **Hint system & wrong-answer penalty**
+- **Result screen** (Escaped / Game Over)
+
+### Shared by both
+Visual theme, input validation, GitHub, testing and bug fixing, final report and project demonstration.
 
 ## About the Game
 
@@ -60,23 +84,6 @@ Ties on the leaderboard are broken by the faster time.
    git clone https://github.com/Greemines/Escape.exe-.git
 3. Open `EscapeExe.slnx` in Visual Studio.
 4. Press **F5** to build and run.
-
-## Project Progress
-
-- [x] Project setup, 9 forms and core classes
-- [x] Start screen with name validation and navigation
-- [x] GameSession with shared 15-minute timer
-- [x] PuzzleBank question banks (Rooms 2 & 4) and random exit-code digits
-- [x] Room 2: Missing Keyword
-- [ ] Room 1: Binary Door
-- [ ] Room 3: Caesar Cipher
-- [ ] Room 4: Logic Gate Switches
-- [ ] Room 5: Algorithm Trace
-- [ ] Final Room
-- [ ] Hints & wrong-answer penalty
-- [ ] Result screen
-- [ ] Scoring, leaderboard & JSON storage
-- [ ] Testing & polish
 
 ## Project Proposal
 
