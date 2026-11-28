@@ -11,28 +11,7 @@ A programming puzzle escape game built in **C# Windows Forms** for the **Visual 
 | Minahil Chaudhry | 09-131242-045 |
 | Javeria Lodhi | 09-131242-033 |
 
-**Submitted to:** Miss Raheela Ambrin
 
-## Responsibilities
-
-### Minahil Chaudhry
-- **Room 2: Missing Keyword** (Easy)
-- **Room 4: Logic Gate Switches** (Hard)
-- **Final Room:** exit-code check
-- **GameSession:** shared 15-minute countdown timer that keeps running across all rooms
-- **PuzzleBank:** question banks for Rooms 2 and 4, and the random exit-code digits
-- **Scoring, Leaderboard & JSON storage** (`scores.json`)
-
-### Javeria Lodhi
-- **Room 1: Binary Door** (Easy)
-- **Room 3: Caesar Cipher** (Medium)
-- **Room 5: Algorithm Trace** (Hard)
-- **Start screen** with name validation, and navigation between forms
-- **PuzzleBank:** question generators for Rooms 1, 3 and 5
-- **Hint system & wrong-answer penalty**
-- **Result screen** (Escaped / Game Over)
-
-### Shared by both
 Visual theme, input validation, GitHub, testing and bug fixing, final report and project demonstration.
 
 ## About the Game
