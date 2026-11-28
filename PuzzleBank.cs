@@ -157,4 +157,24 @@ public static class PuzzleBank
         }
         return result;
     }
+
+    public static int[] GenerateTraceArray()
+    {
+        return Enumerable.Range(1, 9).OrderBy(n => Rng.Next()).Take(4).ToArray();
+    }
+
+    public static int[] BubbleSortOnePass(int[] input)
+    {
+        int[] result = (int[])input.Clone();
+        for (int i = 0; i < result.Length - 1; i++)
+        {
+            if (result[i] > result[i + 1])
+            {
+                int temp = result[i];
+                result[i] = result[i + 1];
+                result[i + 1] = temp;
+            }
+        }
+        return result;
+    }
 }
